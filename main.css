@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.question {
+    border: 5px solid darkgray;
+    padding: 10px;
+    margin-left:50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.list {
+    text-align: left;
+}
+
+p.position-score>div{
+    display: flex;
+
+}
