@@ -5,25 +5,108 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
     background-image: url('/images/bg-crop.jpg');
     background-repeat: no-repeat;
-    /* background:radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 15%, rgba(0,128,128,1) 100%), url(/images/bg-crop.jpg);  */
+    background-size: cover;
+    /* background:radi`al-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 15%, rgba(0,128,128,1) 100%), url(/images/bg-crop.jpg);  */
 }
-
-.main {
-    background-image: radial-gradient(white 50%,transparent 75% );
-
+   
+main {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-image: radial-gradient(white 55%,transparent 75% ); */
     margin-top:auto;
     margin-bottom:auto;
-    padding-top: 15vmax;
-    height:90vmax;
+    /* padding-top: 7vmax; */
+    height:95vmax;
 }
 
-h1 {
-    font-size: 1.9em;
-    text-decoration: underline;
-
+h2 {
+    margin: .2em;
 }
+
+.answers{
+    margin-top: 1.2em;
+}
+
+@media only screen and (max-width: 600px) {
+ 
+    main {
+        background-image: radial-gradient(white 62%,transparent 75% );
+    }
+
+    h1 {
+        font-size: 1.6em;
+        text-decoration: underline;
+    
+    }
+
+    .hidden-s {
+        display:none;
+    }
+
+    .question {
+        width: 85vw;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .image {
+        height:200px;
+    }
+
+    .response {
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button {
+        margin:15px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+ 
+    main {
+        background-image: radial-gradient(white 62%,transparent 75% );
+    }
+
+    h1 {
+        font-size: 1.9em;
+        text-decoration: underline;
+    
+    }
+
+    .image {
+        height: 20vh;
+
+    }
+
+    .hidden-m{
+        display: none;
+    }
+    
+
+    .question {
+        width: 85vw;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .response {
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button {
+        margin:15px;
+    }
+}
+
+
 

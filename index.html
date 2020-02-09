@@ -9,14 +9,25 @@
     <title>U.S. History Quiz</title>
 </head>
 <body>
-    <section class="main">
-        <header>
-            <h1>
-                Early U.S. History Quiz
-            </h1>
-        </header>
-        <h2 class="score js-score-fill">Score:</h2>
-    </section>
-    
+    <main>
+        <section>
+            <header>
+                <h1>
+                    Early U.S. History Quiz
+                </h1>
+            </header>
+            <h2 class="score js-q-score-fill a"></h2>
+        </section>
+        <section>
+            <form>
+                <div class="js-question question"></div>
+                <div class="js-image image hidden-s hidden-m"></div>
+                <div class="js-options answers"></div>
+                <input type="button" class="button">
+            </form>
+        </section>
+    </main>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
